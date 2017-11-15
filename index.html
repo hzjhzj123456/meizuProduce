@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/paroduce-show.css" />
+		<link rel="stylesheet" href="css/detail.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/angular.min.js" ></script>
+	</head>
+	<body ng-app='meizu' ng-controller='produce'>
+		<div class='nav' ng-mouseleave='navleave()'>
+			<div class='left'><img src='img/logo-toggle.png'></div>
+			<div class='right'>
+				<span ng-repeat='x in navlist' ng-mouseover='changebg($event,$index)' ng-mouseleave='leavebg($event,$index)'>{{x}}</span>
+			</div>
+			<div class='icon'>
+				<span><a href='#'><img src='img/icon-user_032dea3.png'/></a></span>
+				<span><a href='#'><img src='img/shopping-cart-gray_56ba6ef.png'/></a></span>
+			</div>
+		</div>
+		<div class='produce-show'>
+			<div class='container'>
+				<p><a href=''>首页</a>>魅族PRO7 plus</p>
+				<div class='produce-img'>
+					<div class='big-img'>
+						<a href=''>
+							<img ng-src='{{view.bigimg}}' />
+						</a>
+					</div>
+					<div class='small-img'>
+						<ul>
+							<li ng-repeat='x in view.smallimg' ng-click='changeimg($event,$index)'>
+								<a href=''>
+									<img ng-src='{{x}}'/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class='produce-info'>
+					<div class='title'>
+						<h1>{{view.phonename}}</h1>
+						<p>{{view.describe}}</p>
+					</div>
+					<div class='sell'>
+						<span>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格:</span>
+						<span>{{view.price}}</span>
+					</div>
+					<div class='model'>
+						<span>型&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:</span>
+						<span class='button' ng-repeat='x in view.phonenamelist' ng-click='changeXh($event,$index)'><a href=''>{{x.name}}</a></span>
+					</div>
+					<div class='leixing'>
+						<span>网络类型:</span>
+						<span class='button' ng-click='changeLx($event)' ng-repeat='x in view.modellist'><a href=''>{{x}}</a></span>
+					</div>
+					<div class='color'>
+						<span>颜色分类：</span>
+						<span ng-repeat='x in view.colorlist' ng-click='changeli($event,$index)'><a href='' class='imgbox'><img ng-src='{{x.imgTitle}}'/>{{x.title}}</a></span>
+					</div>
+					<div class='capacity'>
+						<span>内存容量:</span>
+						<span ng-repeat='x in view.capacitylist' class='button' ng-click='changecap($event)'><a href=''>{{x}}</a></span>
+					</div>
+					<div class='service'>
+						<span>支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持:</span>
+						<span><i></i>&nbsp;&nbsp;花呗分期</span>
+						<span><i></i>&nbsp;&nbsp;顺丰包邮</span>
+						<span><i></i>&nbsp;&nbsp;7天无理由退货</span>
+					</div>
+					<div class='service2'>
+						<span>服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务:</span>
+						<span>本商品由 魅族 负责发货并提供售后服务</span>
+					</div>
+					<div class='count'>
+						<span>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量:</span>
+						<div class='countbox'>
+							<a ng-click='changecount($event,$index)' data-num='1' href='' class='add'>+</a>
+							<input type="text" ng-model="view.count" name='' id=''/>
+							<a ng-click='changecount($event,$index)' data-num='2' href='' class='reduce'>-</a>
+						</div>
+					</div>
+					<div class='buybutton'>
+						<span class='buy'><a href=''>立即购买</a></span>
+						<span class='shoppingbus'><a href=''>加入购物车</a></span>
+					</div>
+				</div>
+			</div>
+			<div class='detail'>
+				<div class='title'>
+					<span><a href='' ng-click='changetext($event,$index)' data-num='1'>商品详情</a></span>
+					<span><a href='' ng-click='changetext($event,$index)' data-num='2'>规格参数</a></span>
+					<span><a href='' ng-click='changetext($event,$index)' data-num='3'>常见问题</a></span>
+				</div>
+				<div class='content'>
+					<div ng-class="{'img':img,'imgnone':imgnone}">
+						<img src='detail/Cgbj0VmTs5-ABqLkAAO3zsQ90T8638.jpg' />
+						<img src='detail/Cgbj0Fl4hoiAZDSNAAOIXumqFzY547 (1).jpg' />
+						<img src="detail/Cgbj0Fl4homACgOlAAJqo8_ys1o391.jpg"/> 
+					</div>
+					<div ng-class="{'desibe':desibe,'dedescribenone':dedescribenone}"></div>
+					<div ng-class="{'question':question,'questionnone':questionnone}"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/storg-produce.js" ></script>
+	</body>
+</html>

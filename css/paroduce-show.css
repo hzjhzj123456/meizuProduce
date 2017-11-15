@@ -1,0 +1,288 @@
+   .produce-show{
+   	width:1440px;
+   	height:auto;
+   }
+   .produce-show .container{
+   	width:1240px;
+   	height:684px;
+   	margin:0 auto;
+   }
+   .produce-show .container .produce-img{
+   	width:495px;
+   	height:565px;
+	float:left;
+	margin-top:40px;
+   }
+   .produce-show .container .produce-img .big-img{
+   	height:395px;
+   	width:395px;
+   	padding-left:25px;
+   }
+   .produce-show .container .produce-img .big-img a{
+   	height:375px;
+   	width:375px;
+   	margin:0 auto;
+   }
+   .produce-show .container .produce-img .big-img a img{
+   	height:375px;
+   	width:375px;
+   }
+   .produce-show .container .produce-img .small-img{
+   	height:91px;
+   	width:495px;
+   }
+   .produce-show .container .produce-img .small-img ul{
+   	height:100%;
+   	width:100%;
+   }
+   .produce-show .container .produce-img .small-img ul li{
+   	height:87px;
+   	width:87px;;
+   	float:left;
+   	line-height:87px;
+   	margin-right:30px;
+   	text-align:center;
+   }
+   .produce-show .container .produce-img .small-img ul li.active{
+   	border:1px solid #dcdcdc;
+   }
+   .produce-show .container .produce-img .small-img ul li a{
+   	height:87px;;
+   	width:87px;
+   	text-align:center;
+   	display:block;
+   }
+   .produce-show .container .produce-img .small-img ul li a img{
+   	height:75px;
+   	width:75px;
+   }
+   .produce-show .container .produce-info{
+   	width:675px;
+   	height:644px;
+	float:left;
+	margin-top:30px;
+   }
+   .produce-show .container .produce-info .title h1{
+   	font-size:24px;
+   }
+   .produce-show .container .produce-info .title p{
+   	color:#e22841;
+   	font-size:16px;
+   	margin-top:10px;
+   }
+   .produce-show .container .produce-info .sell{
+   	height:55px;
+   	width:675px;
+   	background:#f5f5f5;
+   	line-height:55px;
+   	font-size:12px;
+   	padding-left:10px;
+   	color:#999;
+   	margin-top:15px;
+   }
+   .produce-show .container .produce-info .sell span:last-child{
+   	font-size:24px;
+   	color:#e22841;
+   }
+   .produce-show .container .produce-info .model{
+   	height:44px;
+   	line-height:44px;
+   	font-size:12px;
+   	padding-left:10px;
+   	margin-top:20px;
+   }
+   .button{
+   	display:inline-block;
+   	height:34px;
+   	color:#333;
+   	font-size:12px;
+   	border: 1px solid #f5f5f5;
+   	margin-right:10px;
+   	box-sizing:border-box;
+   	line-height:34px;
+   	padding:0px 5px;
+   	border-radius:4px;
+   	margin-right:5px;
+   }
+   .imgbox{
+   	display:inline-block;
+   	height:40px;
+   	color:#999;
+   	font-size:12px;
+   	border: 1px solid #f5f5f5;
+   	margin-right:10px;
+   	box-sizing:border-box;
+   	line-height:40px;
+   	padding:0px 5px;
+   	border-radius:4px;
+   	margin-right:5px;
+   	padding-left:40px;
+   }
+   .produce-show .container .produce-info .model span:first-child{
+   	margin-right:10px;
+   }
+   .produce-show .container .produce-info .leixing{
+   	height:44px;
+   	line-height:44px;
+   	font-size:12px;
+   	padding-left:10px;
+   	margin-top:20px;
+   }
+   .produce-show .container .produce-info .leixing span:first-child{
+   	margin-right:10px;
+   }
+   .produce-show .container .produce-info .color{
+   	height:44px;
+   	line-height:44px;
+   	font-size:12px;
+   	padding-left:10px;
+   	margin-top:20px;
+   }
+   .produce-show .container .produce-info div span a{
+   	display:inline-block;
+   }
+   .produce-show .container .produce-info .color span {
+   	display:inline-block;
+   }
+   .produce-show .container .produce-info .color span a{
+   	position:relative;
+   }
+   .produce-show .container .produce-info .color span a img{
+   	height:32px;
+   	width:32px;
+   	position:absolute;
+   	top:2px;
+   	left:5px;
+   }
+   .produce-show .container .produce-info .capacity{
+   	height:44px;
+   	line-height:44px;
+   	font-size:12px;
+   	padding-left:10px;
+   	margin-top:20px;
+   }
+   .produce-show .container .produce-info .capacity span:first-child{
+   	margin-right:10px;
+   }
+   .produce-show .container .produce-info .service{
+   	height:44px;
+   	line-height:44px;
+   	font-size:12px;
+   	padding-left:10px;
+   	margin-top:20px;
+   	width:675px;
+   	border-top:1px solid #F5F5F5;
+   }
+   .produce-show .container .produce-info .service span{
+   	margin-right:10px;
+   }
+   .produce-show .container .produce-info .service span i{
+   	display:inline-block;
+   	height:16px;
+   	width:16px;
+   	background:url('../img/icons-9697935577.png');
+   	background-position: 0px -100px;
+   }
+   .produce-show .container .produce-info .service2{
+   	height:44px;
+   	line-height:44px;
+   	font-size:12px;
+   	padding-left:10px;
+   	width:675px;
+   	border-bottom:1px solid #F5F5F5;
+   }
+   .produce-show .container .produce-info .service2 span{
+   	margin-right:10px;
+   }
+   .produce-show .container .produce-info .count{
+   	height:44px;
+   	line-height:44px;
+   	font-size:12px;
+   	padding-left:10px;
+   	width:675px;
+	margin-top:20px;
+   }
+   .produce-show .container .produce-info .count span{
+   	margin-right:10px;
+   }
+   .produce-show .container .produce-info .count .countbox{
+   	display:inline-block;
+    width:80px;
+    height:40px;
+    position:relative
+   }
+   .produce-show .container .produce-info .count .countbox input{
+   	height:40px;
+   	width:55px;
+   	text-align:center;
+   	border:1px solid #dcdcdc;
+   }
+   .produce-show .container .produce-info .count .countbox a{
+   	height:18px;
+   	width:22px;
+   	display:block;
+   	position:absolute;
+   	border:1px solid #dcdcdc;
+   	color:#black;
+   	box-sizing: border-box;
+   	cursor:pointer;
+   	line-height:15px;
+   	text-align: center;
+   	font-size:14px;
+   }
+   .produce-show .container .produce-info .count .countbox .add{
+   	right:-3px;
+   	top:2px;
+   }
+   .produce-show .container .produce-info .count .countbox .reduce{
+   	right:-3px;
+   	bottom:-4px;
+   }
+   .produce-show .container .produce-info .buybutton{
+   	height:40px;
+   	width:675px;
+   	margin-top:30px;
+   }
+   .produce-show .container .produce-info .buybutton span{
+   	height:40px;
+   	width:130px;
+   	line-height:40px;
+   	text-align:center;
+   	display:inline-block;
+   	color:#fff;
+   	border-radius: 4px;
+   	border:1px solid #333;
+   	margin-right:20px;
+   }
+   .produce-show .container .produce-info .buybutton span a{
+    display:block;
+    height:100%;
+    width:100%;
+   }
+   .produce-show .container .produce-info .buybutton span a{
+    display:block;
+    height:100%;
+    width:100%;
+    color:#fff;
+   }
+   .produce-show .container .produce-info .buybutton .buy{
+   	background:#f66567;
+   	border-color:#f54d4f;
+   }
+   .produce-show .container .produce-info .buybutton .buy:hover{
+   	background:#f11316;
+   	border-color:#b70b0d;
+   }
+   .produce-show .container .produce-info .buybutton .shoppingbus{
+    background:#0aaee3;
+    border-color:#0894c1
+   }
+   .produce-show .container .produce-info .buybutton .shoppingbus:hover{
+    background:#0894c1;
+    border-color:#056382;
+   }
+   .active{
+   	border-color:#00c3f5 !important;
+   }
+  
+   
